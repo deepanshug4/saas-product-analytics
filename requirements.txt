@@ -1,0 +1,12 @@
+pandas
+numpy
+faker
+streamlit
+plotly
+scikit-learn
+openai
+faker
+numpy
+pandas
+plotly
+streamlit
