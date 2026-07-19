@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 import numpy as np
 import pandas as pd
 from faker import Faker
+from pathlib import Path
 
 fake = Faker()
 
@@ -228,6 +229,8 @@ subscriptions_df = pd.DataFrame(subscriptions)
 # ----------------------------------------------------
 # Save Files
 # ----------------------------------------------------
+DATA_DIR = Path("data")
+DATA_DIR.mkdir(exist_ok=True)
 
 users_df.to_csv(
     "data/users.csv",
